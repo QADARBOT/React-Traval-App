@@ -1,0 +1,158 @@
+.service {
+  font-family: Roboto;
+}
+.item-List {
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px 0px;
+  font-size: x-small;
+}
+.card-item {
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0fr));
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  width: 260px;
+  height: 350px;
+  padding: 10px 10px;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card-item img {
+  object-fit: cover;
+  width: 260px;
+  height: 190px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.card-item h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 23px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.card-item p {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.card-item:hover {
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.c {
+  background-image: url(../assets/img-9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: azure;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.c h3 {
+  padding-top: 10px;
+  font-size: 50px;
+}
+.c p {
+  padding-top: 10px;
+  text-align: center;
+  width: 70%;
+  font-size: 15px;
+}
+
+/* investars */
+.p-investars {
+  font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  background: #d7d7d7;
+  padding-top: 30px;
+}
+.investars {
+  background: #d7d7d7;
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+
+  padding: 30px;
+  font-size: x-small;
+}
+.investar-item {
+  text-align: center;
+}
+.investar-item img {
+  border: solid 1px #000;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+@media screen and (max-width: 920px) {
+  .item-List {
+    grid-template-columns: 0.2fr 0.2fr;
+    gap: 20px 15px;
+    margin: 30px 0px;
+  }
+  .card-item {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0fr));
+    width: 160px;
+    height: 250px;
+    padding: 10px 10px;
+  }
+  .card-item img {
+    width: 160px;
+    height: 130px;
+    border-radius: 5px;
+  }
+  .card-item h1 {
+    font-size: 15px;
+    margin-bottom: 7px;
+  }
+  .card-item p {
+    font-size: 10px;
+    width: 160px;
+    margin-bottom: 10px;
+  }
+ 
+
+
+  .investars {
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    justify-content: center;
+    gap: 10px 30px;
+    padding: 10px;
+
+  }
+  .investar-item img {
+    border: solid 1px #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .p-investars {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+
+
+  .c h3 {
+    padding-top: 6px;
+    font-size: 40px;
+  }
+  .c p {
+    padding-top: 10px;
+    text-align: center;
+    width: 70%;
+    font-size: 11px;
+  }
+}

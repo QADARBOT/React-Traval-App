@@ -1,0 +1,168 @@
+/* secation two  */
+.section-2 {
+  margin: 40px 0px;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-two {
+  margin-bottom: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-two > h1 {
+  font-size: 50px;
+}
+.body-two,
+.body-thre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 40px 0px;
+}
+.text {
+  width: 90%;
+  font-size: 20px;
+  padding: 10px;
+}
+.img {
+  display: flex;
+  margin: 10px;
+  margin-bottom: -20px;
+}
+.img-1,
+.img-3 {
+  width: 220px;
+  height: 300px;
+  background-image: url(../assets/img-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px 10px;
+  border-radius: 10px;
+}
+.img-3 {
+  background-image: url(../assets/img-4.jpg);
+}
+.img-2,
+.img-4 {
+  width: 220px;
+  height: 300px;
+  background-image: url(../assets/img-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  margin-top: -10px;
+}
+.img-4 {
+  background-image: url(../assets/img-5.jpg);
+}
+
+.cad-List {
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px 0px;
+  font-size: x-small;
+}
+.card-item {
+  background: #fdfeff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  width: 260px;
+  height: 350px;
+  padding: 10px 10px;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card-item img {
+  width: 260px;
+  height: 190px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.card-item h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 23px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.card-item p {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.card-item:hover {
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1210px) {
+  .body-two,
+  .body-thre {
+    flex-direction: column;
+  }
+  .header-two > h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .cad-List {
+    grid-template-columns: 0.2fr 0.2fr;
+  }
+  .body-two,
+  .body-thre {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 556px) {
+  .body-two,
+  .body-thre {
+    width: 90%;
+  }
+  .header-two > h1 {
+    font-size: 25px;
+  }
+  .header-two {
+    width: 90%;
+  }
+  .header-two > p {
+    font-size: 10px;
+  }
+  .img-1,
+  .img-3,
+  .img-2,
+  .img-4 {
+    width: 150px;
+    height: 200px;
+  }
+
+  .body-thre .text p {
+    font-size: 14px;
+  }
+  .body-two .text p {
+    font-size: 14px;
+  }
+
+  .body-thre .text h2 {
+    font-size: 20px;
+  }
+  .body-two .text h2 {
+    font-size: 20px;
+  }
+}
