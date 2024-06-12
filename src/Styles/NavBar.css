@@ -7,7 +7,12 @@
 
 .nav-bar {
   font-family: Roboto;
-  background: #fff;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ) !important;
+  backdrop-filter: blur(10px) ;
   position: sticky;
   top: 0;
   z-index: 999;

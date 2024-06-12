@@ -36,12 +36,14 @@
   font-size: 50px;
   margin-left: 30px;
   text-align: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 form {
   display: flex;
   flex-direction: column;
   padding: 30px;
+  animation: fadeIn 1s ease-in-out;
 }
 
 form input {
@@ -89,7 +91,7 @@ form button {
 @media screen and (max-width: 820px) {
   .contact {
     padding: 10px;
-    height: 50%;
+    height: 70%;
     width: 80%;
   }
   .contact .rightSide h1 {
@@ -107,6 +109,26 @@ form button {
   form textarea {
     margin-top: 10px;
     font-size: 15px;
+  }
+}
 
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

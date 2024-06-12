@@ -1,10 +1,11 @@
 import React from "react";
 import "../Styles/About.css";
-import img1 from '../assets/img-1.jpg'
-import img2 from '../assets/img-7.jpg'
-import img3 from '../assets/img-5.jpg'
-import img4 from '../assets/img-9.jpg'
+import { Link } from "react-router-dom";
 
+import img1 from "../assets/img-1.jpg";
+import img2 from "../assets/img-7.jpg";
+import img3 from "../assets/img-5.jpg";
+import img4 from "../assets/img-9.jpg";
 
 function About() {
   return (
@@ -35,12 +36,12 @@ function About() {
       </div>
 
       <h2>Our Services</h2>
-      <ul>
+      <ol>
         <li>Flight bookings</li>
         <li>Hotel reservations</li>
         <li>Car rentals</li>
         <li>Travel guides and tips</li>
-      </ul>
+      </ol>
 
       <div className="image-container">
         <img src={img3} alt="Our Services" />
@@ -59,8 +60,10 @@ function About() {
 
       <h2>Contact Us</h2>
       <p>
-        If you have any questions or need assistance, please don't hesitate to{" "}
-        <a href="/contact">contact us</a>.
+        If you have any questions or need assistance, please don't hesitate to
+        <Link to="/contect" className="nav-links">
+          contect us.
+        </Link>
       </p>
 
       <p>
