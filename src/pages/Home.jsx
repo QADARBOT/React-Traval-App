@@ -10,7 +10,9 @@ function Home() {
         <div className="bg-img">
           <h5>Write Your Story With </h5>
           <p>Choose Your Favourite Destination</p>
-          <button>Traval Plan</button>
+          <Link to="/servic">
+            <button>Traval Plan</button>
+          </Link>
         </div>
       </section>
       <Section />
