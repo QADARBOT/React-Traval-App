@@ -18,9 +18,8 @@ function NavBar() {
     }
   };
   return (
-    <div className="nav-bar" >
+    <div className="nav-bar">
       <div className="nav-bar-container" onClick={closeMenu}>
-
         <Link to="/" className="nav-logo" onClick={closeMenu}>
           Travel <i className="fa-solid fa-mountain-sun fa-sm "></i>
         </Link>
@@ -31,22 +30,22 @@ function NavBar() {
         <ul className={close ? "nav-menu active" : "nav-menu "}>
           <li>
             <Link to="/" className="nav-links">
-              Home
+              <i class="fa-solid fa-house"></i> Home
             </Link>
           </li>
           <li>
             <Link to="/about" className="nav-links">
-              About
+              <i class="fa-solid fa-id-badge"></i> About
             </Link>
           </li>
           <li>
             <Link to="/servic" className="nav-links">
-              Service
+              <i class="fa-solid fa-layer-group"></i> Service
             </Link>
           </li>
           <li>
             <Link to="/contect" className="nav-links">
-              Contect
+              <i class="fa-solid fa-message"></i> Contect
             </Link>
           </li>
         </ul>
